@@ -1,0 +1,8 @@
+<h1>Products#add</h1>
+<p>Find me in app/views/products/add.html.erb</p>
+
+<%= form_tag("/add") do %>
+<%= label_tag "Add item" %>
+<%= text_field_tag 'name'%>
+<%= submit_tag "Add to the cart" %>
+<% end %>
