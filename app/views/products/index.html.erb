@@ -1,0 +1,11 @@
+<h1> Shopping Cart</h1>
+Add new item:
+<%= render 'form' %>
+<br>
+<ul>
+    <% @cart.each do |item| %>
+        <li><%= item %></li>
+    <% end %>
+</ul>
+
+
