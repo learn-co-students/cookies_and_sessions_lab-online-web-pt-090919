@@ -1,0 +1,15 @@
+<!-- homepage adds items to the cart when they're submitted via its form -->
+<h3>Add an item</h3>
+<!-- form action="/products/add" method="POST" -->
+<%= form_tag products_path do%>
+  <%= label_tag :product %>
+  <%= text_field_tag :product %>
+  <%= submit_tag "add to cart" %>
+<% end %>
+
+<h3>Current Products in Cart</h3>
+<ul>
+<% cart.each do |product| %>
+  <li><%= product %></li>
+<% end %>
+</ul>
